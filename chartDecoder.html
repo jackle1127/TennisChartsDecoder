@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Chart Decoder</title>
+        <script src='chartDecoder.js'></script>
+        <style>
+            textarea {
+                min-width: 400px;
+                min-height: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Player 1:</td><td><input id='txtPlayer1'></input></td>
+            </tr>
+            <tr>
+                <td>Player 2:</td><td><input id='txtPlayer2'></input></td>
+            </tr>
+            <tr>
+                <td>Tournament:</td><td><input id='txtTournament'></input></td>
+            </tr>
+            <tr>
+                <td colspan=2>Codes:</td>
+            </tr>
+            <tr>
+                <td colspan=2><textarea id='txtPointCodes'></textarea></td>
+            </tr>
+            <tr>
+                <td><button onclick='decodeClick()'>Decode</button></td>
+                <td id='outputTD'></td>
+            </tr>
+        </table>
+    </body>
+</html>
